@@ -14,7 +14,33 @@
         <h1>Medicine Tracker</h1>
     </header>
     <main>
+        <section>
+            <input type="Text" id="search-field" placeholder="Search Medicine">
+            <button type="button" onclick="searchHandler()">Search</button>
+            <label id="search-error-message"></label>
+        </section>
+        <section>
+            <table id="medicine-list">
+                <thead>
+                    <tr id="medicine-header">
+                        <th>Medicine Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
 
+                </tbody>
+            </table>
+        </section>
+        <section id="add-medicine">
+            <h3>Add Medicine</h3>
+            <form id="add-form" action="http://localhost:8000/create" method="post" target="_self">
+                <input type="Text" name="name" placeholder="Name">
+                <input type="number" step="0.01" name="price" placeholder="Price">
+                <button type="submit">Add Medicine</button>
+                <label id="add-message"></p>
+            </form>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>

@@ -30,3 +30,35 @@ body {
 }
 
 /* ---- Your custom styles below ---- */
+header, main {
+    text-align: center;
+}
+
+#medicine-list, #medicine-list tr, #medicine-list tbody td {
+    border: 2px solid #333;
+    border-collapse: collapse;
+}
+
+#medicine-list {
+    margin-top: 0.5rem;
+    justify-self: center;
+    min-width: 80%;
+}
+
+#medicine-list tr {
+    background-color: #ddd;
+}
+
+#medicine-header th {
+    padding: 0.5rem;
+    background-color: #aaa;
+}
+
+#medicine-list tbody td {
+    padding: 0.5rem;
+}
+
+#add-medicine {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
